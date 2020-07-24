@@ -3,12 +3,13 @@ const bodyParser = require("body-parser");
 
 const mailer = require("nodemailer");
 
+// Config do protocolo SMPT para envios de emails
 const config = {
     host: "smtp.mailtrap.io",
-    port: 25,
+    port: 2525,
     auth: {
         user: "879cbcc900e682",
-        pass: "48e726117b8ca8",
+        pass: "48e726117b8ca8"
     }
 };
 
