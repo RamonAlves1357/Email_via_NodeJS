@@ -8,8 +8,8 @@ const config_Mailtrap = {
     host: "smtp.mailtrap.io",
     port: 2525,
     auth: {
-        user: "879cbcc900e682",
-        pass: "48e726117b8ca8"
+        user: "User",
+        pass: "Pass"
     }
 };
 
@@ -18,8 +18,8 @@ const config_Gmail = {
     port: 587,
     secure: false,
     auth: {
-        user: "ramon.alves@academico.ifpb.edu.br",
-        pass: "1357abcd/"
+        user: "User",
+        pass: "Pass"
     },
     tls: {
         rejectUnawthorized: false
@@ -33,8 +33,8 @@ app.use(bodyParser.json());
 app.post("/send-email", (req, res) => {
 
     const message = {
-        from: "Ramon Alves <ramon.alves@academico.ifpb.edu.br>",
-        to: ["ramon.alves@academico.ifpb.edu.br"],
+        from: "Nome <Email>",
+        to: ["EmailDestino"],
         subject: "Teste de email",
         text: "Este email está sendo enviado por uma APi NodeJS. 😁",
     }
